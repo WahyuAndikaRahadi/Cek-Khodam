@@ -132,7 +132,7 @@ function App() {
 
   return (
     <div className="bg-beige min-h-screen flex justify-center items-center" style={{
-      backgroundImage: `url('../public/bg-medieval.jpg')`,
+      backgroundImage: `url('/bg-medieval.jpg')`,
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover'
