@@ -6,12 +6,12 @@ export default function KorriganRight(props) {
   const { nodes, materials, animations } = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/korrigan-hat/model.gltf');
   const { actions } = useAnimations(animations, group);
 
-  // Function to start the pose_chapeau animation
+
   const playPoseChapeau = () => {
     actions['pose_chapeau'].reset().play();
   };
 
-  // Start animation when component mounts
+  
   useEffect(() => {
     playPoseChapeau();
   }, []);

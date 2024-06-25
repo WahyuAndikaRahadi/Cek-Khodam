@@ -7,12 +7,12 @@ export default function KorigganLeft(props) {
   const { nodes, materials, animations } = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/young-korrigan/model.gltf');
   const { actions } = useAnimations(animations, group);
 
-  // Fungsi untuk memulai animasi pose_jeune
+
   const playPoseJeune = () => {
     actions['pose_jeune'].reset().play();
   };
 
-  // Contoh memulai animasi saat komponen dimuat
+  
   React.useEffect(() => {
     playPoseJeune(); 
   }, []);
